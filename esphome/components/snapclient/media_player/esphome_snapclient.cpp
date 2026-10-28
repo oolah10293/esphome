@@ -21,6 +21,8 @@
 
 namespace esphome::snapclient {
 
+ESPHOME_LOG_TAG(TAG, "snapclient");
+
 SnapClientComponent *global_snapclient = nullptr;  // NOLINT(cppcoreguidelines-avoid-non-const-global-variables)
 
 static void player_set_mute(bool mute) { global_snapclient->set_mute_from_isr(mute, false); }
