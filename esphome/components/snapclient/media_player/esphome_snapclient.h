@@ -26,8 +26,6 @@ using audioDACdata_t = struct AudioDaCdataS {
   int volume;
 };
 
-ESPHOME_LOG_TAG(TAG, "snapclient");
-
 class SnapClientComponent : public i2s_audio::I2SAudioOut, public media_player::MediaPlayer, public Component {
  public:
   void set_mute_pin(GPIOPin *mute_pin) { this->mute_pin_ = mute_pin; }
