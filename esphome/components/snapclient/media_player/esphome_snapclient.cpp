@@ -21,7 +21,7 @@
 
 namespace esphome::snapclient {
 
-ESPHOME_LOG_TAG(TAG, "snapclient");
+static const char *const TAG = "snapclient";
 
 SnapClientComponent *global_snapclient = nullptr;  // NOLINT(cppcoreguidelines-avoid-non-const-global-variables)
 
