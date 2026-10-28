@@ -1,6 +1,7 @@
 #pragma once
 
 #include "esphome/core/defines.h"
+#include "esphome/core/log.h"
 
 #ifdef USE_ESP32
 #ifndef USE_I2S_LEGACY
